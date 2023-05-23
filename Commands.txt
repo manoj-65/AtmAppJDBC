@@ -1,0 +1,30 @@
+Go to Folder Where h2-1.4.200.jar file is there
+In the File Path Type CMD and click enter
+You will get Command Prompt
+
+java -jar h2-1.4.200.jar
+
+You will get Windown in Browser
+UserName= sa
+Password = 1234
+ then click on connect
+
+ Then Create The Table Named as ACCOUNT
+    CREATE TABLE `account` (
+  `accountId` INT NOT NULL,
+  `userName` VARCHAR(45) NULL,
+  `atmcardnumber` VARCHAR(45) NOT NULL,
+  `pin` INT NULL,
+  `amount` DOUBLE NULL,
+  PRIMARY KEY (`accountId`),
+  UNIQUE INDEX `atmcardnumber_UNIQUE` (`atmcardnumber` ASC) );
+
+then Come to cmd propmt and user ctrl+c 
+
+To Add the Driver (Implemetation Classes to the Project)
+Steps ->
+1: Right click on Project -> Cleck on Properties
+2:Select Java Build Path->Libraries
+3: Click on Add Extranal Jar -> get a popUp windowe to select a jar file
+4: navigate where h2-1.4.200.jar file is preset and select the h2-1.4.200.jar file
+5: click Apply and close

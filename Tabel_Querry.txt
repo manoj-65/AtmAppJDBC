@@ -1,0 +1,9 @@
+Create Table
+	CREATE TABLE `account` (
+  `accountId` INT NOT NULL,
+  `userName` VARCHAR(45) NULL,
+  `atmcardnumber` VARCHAR(45) NOT NULL,
+  `pin` INT NULL,
+  `amount` DOUBLE NULL,
+  PRIMARY KEY (`accountId`),
+  UNIQUE INDEX `atmcardnumber_UNIQUE` (`atmcardnumber` ASC) );
